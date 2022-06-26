@@ -2,8 +2,8 @@
 $(document).ready(function() {
 
     $(".carousel").carousel({
-        //interval: false,
-        interval: 1000 * 8,
+        interval: false,
+        //interval: 1000 * 8,
         pause: false,
         touch: true
     });
@@ -19,7 +19,7 @@ $(document).ready(function() {
         tap: function(event, target) {
             window.location = $(this).find(".carousel-item.active a").attr("href");
         },
-        excludedElements: "label, button, input, select, textarea, .noSwipe"
+        //excludedElements: "label, button, input, select, textarea, .noSwipe"
     });
 
     $(".carousel .carousel-control-prev").on("click", function() {

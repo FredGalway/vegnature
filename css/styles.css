@@ -9,8 +9,7 @@
     border: 0;
     outline: 0;
     font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+    vertical-align: middle;
     list-style: none;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -23,45 +22,27 @@
      HEADER
 ---------------------------------------------------------------------------------------------------- */
 
-.header_hp {
-    display: block;
-    width: 100%;
-    pointer-events: none;
-    cursor: default;
-}
-
-.header_hp_bg_blue {
-    position: absolute;
-    top: 0px;
-    background-image: url("images/header_hp_bg_blue.svg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 50% -400px;
-    background-size: cover;
-    height: 350px;
-    z-index: 1;
-    /*border: 1px solid;*/
-}
-
 .header_hp_bg_white {
     display: block;
-    position: relative;
+    position: fixed;
     width: 100%;
+    height: 207px;
+    top: 0px;
     background-image: url("images/header_hp_bg_white.svg");
-    background-attachment: revert;
     background-repeat: no-repeat;
     background-image: center;
     background-position: 50% -50px;
     background-size: cover;
-    height: 220px;
-}
 
+    border: 1px solid burlywood;
+    z-index:1;
+}
 
 /* Controled motion of white background curve */
 
 @media (max-width: 1800px) {
     .header_hp_bg_white {
-        height: 270px;
+        height: 215px;
         background-position: 30% -50px;
         transition: .8s;
     }
@@ -69,12 +50,11 @@
 
 @media (max-width: 1200px) {
     .header_hp_bg_white {
-        height: 270px;
+        height: 215px;
         background-position: 20% -50px;
         transition: .8s;
     }
 }
-
 
 /* Header center part */
 
@@ -119,44 +99,46 @@
     /*border: 1px solid;*/
 }
 
-.menu_item :hover {
+.menu_item :hover{
     background-color: #236FB0;
     color: white;
 }
 
-
 /*
 ----------------------------------------------------------------------------------------------------
-     carousel
+     Main part
 ---------------------------------------------------------------------------------------------------- */
 
-#actu_carousel {
-    margin-top: -100px;
-    /*border: 1px solid;*/
+.main_bg_blue {
+    position: relative;
+    /* margin-top: 300px; */
+    top: 0px;
+    /* background-image: url(images/header_hp_bg_blue.svg);
+
+    background-repeat: no-repeat;
+    background-position: 50% -100px;
+    background-size: cover; */
+    /* background-attachment: fixed; */
+    height: 450px;
+    width: 100%;
+    border: 1px solid;
 }
 
-#actu_carousel img {
-    display: block;
-    position: relative;
-    width: 75%;
-    height: auto;
-    margin: 0px auto 0 auto;
-    z-index: -1;
-    -webkit-box-shadow: 0px 22px 31px -11px rgba(87, 87, 87, 1);
-    -moz-box-shadow: 0px 22px 31px -11px rgba(87, 87, 87, 1);
-    box-shadow: 0px 22px 31px -11px rgba(87, 87, 87, 1);
+/* carousel */
+
+#actu_carousel {
+    margin-top: 100px;
+    /*border: 1px solid;*/
 }
 
 embed {
     display: block;
-    position: relative;
-    width: 75%;
-    height: 545px;
-    margin: 0px auto 0 auto;
-    background-image: url("images/header_carousel_bg.png");
-    background-repeat: no-repeat;
-    background: cover;
-    z-index: -1;
+    position: absolute;
+    top:100px;
+    width: 85%;
+    height: 675px;
+    margin: 0px 8% 0 8%;
+
     -webkit-box-shadow: 0px 22px 31px -11px rgba(87, 87, 87, 1);
     -moz-box-shadow: 0px 22px 31px -11px rgba(87, 87, 87, 1);
     box-shadow: 0px 22px 31px -11px rgba(87, 87, 87, 1);
