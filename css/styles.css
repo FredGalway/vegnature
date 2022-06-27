@@ -21,21 +21,26 @@
 ----------------------------------------------------------------------------------------------------
      HEADER
 ---------------------------------------------------------------------------------------------------- */
-
-.header_hp_bg_white {
-    display: block;
-    position: fixed;
+.header{
+    margin, padding : 0;
+}
+.header_bg_white {
+   position:fixed;
     width: 100%;
-    height: 207px;
-    top: 0px;
-    background-image: url("images/header_hp_bg_white.svg");
-    background-repeat: no-repeat;
-    background-image: center;
-    background-position: 50% -50px;
-    background-size: cover;
-
-    border: 1px solid burlywood;
-    z-index:1;
+    height: auto;
+    top: -70px;
+    /*border: 1px solid burlywood;*/
+    z-index: 1;
+}
+.header_content{
+    position: fixed;
+    width: 85%;
+    left: 8%;
+    top: 2%;
+    height: auto;
+    margin, padding: 0;
+    top: 10px;
+    z-index: 3;
 }
 
 /* Controled motion of white background curve */
@@ -56,7 +61,7 @@
     }
 }
 
-/* Header center part */
+/* Header center part
 
 #header_centered {
     width: 75%;
@@ -65,7 +70,7 @@
     margin-right: auto;
     padding-top: 30px;
 }
-
+*/
 .logo {
     width: 202px;
     height: 83px;
@@ -74,7 +79,7 @@
 #menu {
     display: block;
     float: right;
-    margin: 35px 20px 0 0;
+    margin: 20px 0px 0 0;
     pointer-events: auto;
     cursor: default;
     z-index: 10;
@@ -91,8 +96,8 @@
     display: block;
     width: auto;
     height: 27px;
-    border-radius: 15px;
-    padding: 4px 20px 0 10px;
+    border-radius: 20px;
+    padding: 10px 20px 0 10px;
     margin: 0 5% 0 5%;
     text-align: center;
     transition: .5s;
