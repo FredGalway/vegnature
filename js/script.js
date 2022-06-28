@@ -2,8 +2,8 @@
 $(document).ready(function() {
 
     $(".carousel").carousel({
-        interval: false,
-        //interval: 1000 * 8,
+        //interval: false,
+        interval: 1000 * 8,
         pause: false,
         touch: true
     });

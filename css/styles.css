@@ -21,14 +21,12 @@
 ----------------------------------------------------------------------------------------------------
      HEADER
 ---------------------------------------------------------------------------------------------------- */
-.header{
-    margin, padding : 0;
-}
+
 .header_bg_white {
    position:fixed;
     width: 100%;
     height: auto;
-    top: -70px;
+    top: -30px;
     /*border: 1px solid burlywood;*/
     z-index: 1;
 }
@@ -45,18 +43,22 @@
 
 /* Controled motion of white background curve */
 
-@media (max-width: 1800px) {
-    .header_hp_bg_white {
-        height: 215px;
-        background-position: 30% -50px;
+@media (max-width: 1200px) {
+    .header_bg_white {
+        top: -40px;
         transition: .8s;
     }
 }
 
-@media (max-width: 1200px) {
-    .header_hp_bg_white {
-        height: 215px;
-        background-position: 20% -50px;
+@media (min-width: 1200px) {
+    .header_bg_white {
+        top: -70px;
+        transition: .8s;
+    }
+}
+@media (min-width: 1500px) {
+    .header_bg_white {
+        top: -100px;
         transition: .8s;
     }
 }
@@ -108,6 +110,32 @@
     background-color: #236FB0;
     color: white;
 }
+/* Search header Icon */
+.search-icon {
+    width:22px;
+    height:22px;
+    background-image: url("images/search_icon.svg");
+    background-repeat: no-repeat;
+    margin:10px 0 0 20px;
+}
+/* Donate header button */
+.menu_don :link{
+    display:block;
+    width:102px;
+    height:28px;
+    background-color: #F8C310;
+    border-radius: 20px;
+    font-size:15px;
+    color: white !important;
+    padding: 10px 0 0 20px;
+    margin-left:20px;
+}
+.menu_don :hover, .menu_don:visited{
+    color: white !important;
+    transition: .5s;
+}
+
+
 
 /*
 ----------------------------------------------------------------------------------------------------
@@ -150,6 +178,33 @@ embed {
     pointer-events: visible;
 }
 
+.iframe-embed-wrapper2{
+    /*border: 1px solid rgb(81, 255, 0);*/
+    /* position: inherit; */
+    width: 110%;
+    margin: -32% auto 0 6%;
+}
+.iframe-embed-wrapper {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    /*border: 1px solid rgb(36, 89, 11);*/
+}
+.iframe-embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+}
+.iframe-embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 80%;
+    border: 0;
+   /* border: 1px solid rgb(4, 0, 255);*/
+}
 
 /*
 ----------------------------------------------------------------------------------------------------
