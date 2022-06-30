@@ -36,22 +36,23 @@ main {
     z-index: 1;
 }
 
+.header_content {
+    width: auto;
+    height: 75px;
+    background-color: white;
+    padding: 20px 0 0 0;
+}
+
 .header_white_wave {
     width: 100%;
     height: auto;
 }
 
-.header_content {
-    height: auto;
-    background-color: white;
-    padding: 20px 0 0 0;
-}
-
 .logo {
     width: 202px;
     height: 83px;
-    margin-top: 10px;
-    margin-left: 8%;
+    float: left;
+    margin: -10px 0 0 6%;
 }
 
 
@@ -67,7 +68,10 @@ main {
 #menu {
     display: block;
     float: right;
-    margin: 20px 6% 0 0;
+    height: 45px;
+    width: auto;
+    margin: 10px 6% 0 0;
+    padding-top: 5px;
     pointer-events: auto;
     cursor: default;
     z-index: 10;
@@ -89,8 +93,7 @@ main {
     margin: 0 3% 0 3%;
     color: #236FB0;
     text-align: center;
-    transition: .5s;
-    /*border: 1px solid;*/
+    transition: .1s;
 }
 
 .menu_item :visited {
@@ -98,8 +101,8 @@ main {
 }
 
 .menu_item :hover {
-    background-color: #236FB0;
-    color: white;
+    background-color: white;
+    color: #5fd6fe;
 }
 
 
@@ -118,7 +121,7 @@ main {
 
 .menu_donate_bt :link {
     display: block;
-    width: 102px;
+    width: 100px;
     height: 38px;
     margin: 0 0 0 15px;
     background-image: url("images/bt-hp-donate.svg");
@@ -127,9 +130,9 @@ main {
 }
 
 .menu_donate_bt :hover {
-    width: 125px;
-    height: 47px;
-    margin: -3px 0 0 15px;
+    width: 120px;
+    height: 43px;
+    margin: -3px -20px 0 15px;
     transition: .5s;
 }
 
