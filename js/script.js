@@ -1,5 +1,13 @@
-// Carousel Header part
 $(document).ready(function() {
+
+    // Responsive tablet rule
+    if ($(window).width() <= 1150) {
+        console.log("tablet mode");
+    } else {
+        console.log("desktop mode");
+    }
+
+    // Carousel Header part
 
     $(".carousel").carousel({
         //interval: false,
@@ -30,8 +38,4 @@ $(document).ready(function() {
         $(".carousel").carousel("next");
     });
 
-});
-
-// Change Carousel paragraph text
-var element = document.getElementsById("carousel-tagline");
-element.classList.remove("font-weight-bold");
+}); // end of jQuery ready function

@@ -1,171 +1,21 @@
 <!doctype html>
 <html lang="fr">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Veg Nature.fr Carousel</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel=" stylesheet" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.css">
-
-    <style>
-        .container {
-            font-family: 'Roboto', sans-serif;
-            max-width: 100%;
-            padding: 0;
-            margin:0;
-            transition: .5s;
-        }
-
-        .carousel-item {
-            background: #eee;
-        }
-
-        .carousel-item:hover {
-            cursor: grab;
-        }
-
-        .carousel-caption {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            top: 0;
-            bottom: 0;
-        }
-
-        .carousel-caption h2,
-        .carousel-caption p.lead {
-            /*text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);*/
-            text-shadow: none;
-        }
-
-        .carousel-indicators li {
-            width: 0.75rem;
-            height: 0.75rem;
-            border-radius: 100%;
-            align-self: center;
-            transition: all 0.6s ease-in-out;
-        }
-
-        .carousel-indicators li.active {
-            width: 1rem;
-            height: 1rem;
-        }
-        /* Modified rules */
-
-        .carousel-indicators {
-            opacity: 0;
-        }
-
-        .carousel-control-prev,
-        .carousel-control-next {
-            top: 93%;
-            transform: translateY(-50%);
-            width: 3rem;
-            height: 3rem;
-            border: 2px solid #fff;
-            border-radius: 100%;
-        }
-        .carousel_ctrl {
-            display: block;
-            position: absolute;
-            bottom: 40px;
-            right: 25px;
-            width: 130px;
-            height: 50px;
-            padding-top:0;
-        }
-
-        .carousel-control-prev:hover,
-        .carousel-control-next:hover {
-            background: rgb(225, 225, 225);
-            color: rgb(225, 225, 225);
-        }
-        .carousel-caption h2, .carousel-caption p.lead, .lead{
-
-        font-weight:100;
-        font-size:50px;
-        }
-        .font-weight-bold{
-            font-weight: 100 !important;
-        }
-        /* Bt En savoir plus */
-        .to_know_more{
-            display: block;
-            position: absolute;
-            bottom:0;
-            width:220px;
-            height:50px;
-            border-radius: 0 20px 0 0;
-            font-weight: 100;
-            font-size: 25px;
-            padding: 5px 0px 0 20px;
-            color: #236FB0;
-            background-color:#DEDFDF;
-        }
-
-        .to_know_more:link{
-            text-decoration: none;
-            background-image: url("../css/images/arrow_right_blue.svg");
-            background-repeat:no-repeat;
-            background-size: 15px;
-            background-position: 92%;
-        }
-        .to_know_more:hover{
-            background-color:#236FB0;
-            color:#DEDFDF;
-            background-image: url("../css/images/arrow_right_white.svg");
-        }
-        /* Crousel Tag */
-        .carousel-tag{
-            display: block;
-            position: absolute;
-            left: -12%;
-            top: 30%;
-            border-radius: 8px;
-            height: 40px;
-            padding: 0 15px 0 15px;
-            color: #DEDFDF;
-            font-size: 25px;
-            font-weight: 100;
-         }
-         .carousel-blue-tag{
-            width: 130px;
-            background-color: #236FB0;
-         }
-          .carousel-yellow-tag{
-            width: 170px;
-            color: #FFF;
-            background-color: #F8C310;
-         }
-          .carousel-purple-tag{
-            width: 180px;
-            background-color: #8f00d1;
-         }
-         /* Carousel Txt */
-         .carousel-txt{
-            font-weight:500;
-            font-size:45px;
-            line-height: 55px;
-            position: absolute;
-            left: -12%;
-            top: 45%;
-         }
-         /* Image background size */
-         .img-fluid{
-            width: 100%;
-            height: auto;
-         }
-
-
-    </style>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Veg Nature.fr Carousel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel=" stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.css">
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/carousel.css">
+
 </head>
 
-<body style="overflow:hidden">
+<body>
     <div class="container">
         <div id="myCarousel" class="carousel slide carousel--fade shadow" data-ride="carousel">
             <div class="carousel-inner">
@@ -174,50 +24,44 @@
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
                 </ol>
-                     <!-- Slide 1 -->
+                <!-- Slide 1 -->
                 <div class="carousel-item active">
-                <img class="img-fluid" src="../css/images/header_carousel_bg_slide1.png" alt="First slide">
-                   <!-- <img class="img-fluid" src="https://source.unsplash.com/random/1366x768?sig=123" alt="First slide">-->
+                    <img class="img-fluid" src="../css/images/header_carousel_bg_slide1.png" alt="First slide">
+                    <!-- <img class="img-fluid" src="https://source.unsplash.com/random/1366x768?sig=123" alt="First slide">-->
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <p class="carousel-tag carousel-blue-tag">Action</p>
                             <p id="carousel-tagline" class="carousel-txt">
-                                Agir pour la forêt<br>
-                                c’est aussi agir<br>
-                                pour notre santé
+                                Agir pour la forêt<br> c’est aussi agir<br> pour notre santé
                             </p>
                         </div>
                     </div>
                 </div>
-                     <!-- Slide 2 -->
+                <!-- Slide 2 -->
                 <div class="carousel-item">
                     <img class="img-fluid" src="../css/images/header_carousel_bg_slide2.png" alt="Second slide">
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <p class="carousel-tag carousel-yellow-tag">Bénévolat</p>
                             <p class="carousel-txt">
-                            Nous travaillons<br>
-                            en collaboration avec<br>
-                            des producteurs locaux et bio
+                                Nous travaillons<br> en collaboration avec<br> des producteurs locaux et bio
                             </p>
                         </div>
                     </div>
                 </div>
-                    <!-- Slide 3 -->
+                <!-- Slide 3 -->
                 <div class="carousel-item">
-                    <img class="img-fluid" src="../css/images/header_carousel_bg_slide3.png"  alt="Third slide">
+                    <img class="img-fluid" src="../css/images/header_carousel_bg_slide3.png" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <p class="carousel-tag carousel-purple-tag">Évènement</p>
                             <p class="carousel-txt">
-                             Participez à nos<br>
-                            nombreux picnics végétalien<br>
-                            dans les parcs de Montpellier
+                                Participez à nos<br> nombreux picnics végétalien<br> dans les parcs de Montpellier
                             </p>
                         </div>
                     </div>
                 </div>
-                    <!-- bt  Avant / Après -->
+                <!-- bt  Avant / Après -->
                 <div class="carousel_ctrl">
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -227,9 +71,9 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                 </div>
-                    <!-- En savoir plus bt -->
-                 <a class="to_know_more" href="#" alt="En savoir plus">En savoir plus</a>
+                </div>
+                <!-- En savoir plus bt -->
+                <a class="to_know_more" href="#" alt="En savoir plus">En savoir plus</a>
 
             </div>
         </div>

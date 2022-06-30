@@ -13,7 +13,15 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+}
+
+header,
+main {
     color: #236FB0;
+}
+
+main {
+    overflow-x: hidden;
 }
 
 
@@ -22,72 +30,44 @@
      HEADER
 ---------------------------------------------------------------------------------------------------- */
 
-.header_bg_white {
+.header {
     position: fixed;
     width: 100%;
-    height: auto;
-    top: -30px;
-    /*border: 1px solid burlywood;*/
     z-index: 1;
 }
 
+.header_white_wave {
+    width: 100%;
+    height: auto;
+}
+
 .header_content {
-    position: fixed;
-    width: 85%;
-    left: 8%;
-    top: 2%;
     height: auto;
-    margin,
-    padding: 0;
-    top: 10px;
-    z-index: 3;
+    background-color: white;
+    padding: 20px 0 0 0;
 }
-
-
-/* Controled motion of white background curve */
-
-@media (max-width: 1200px) {
-    .header_bg_white {
-        top: -40px;
-        transition: .8s;
-    }
-}
-
-@media (min-width: 1200px) {
-    .header_bg_white {
-        top: -70px;
-        transition: .8s;
-    }
-}
-
-@media (min-width: 1500px) {
-    .header_bg_white {
-        top: -100px;
-        transition: .8s;
-    }
-}
-
-
-/* Header center part
-
-#header_centered {
-    width: 75%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 30px;
-}
-*/
 
 .logo {
     width: 202px;
     height: 83px;
+    margin-top: 10px;
+    margin-left: 8%;
 }
+
+
+/* Disable mobile menu */
+
+#menu_mobile {
+    display: none;
+}
+
+
+/* desktop menu */
 
 #menu {
     display: block;
     float: right;
-    margin: 20px 0px 0 0;
+    margin: 20px 6% 0 0;
     pointer-events: auto;
     cursor: default;
     z-index: 10;
@@ -106,10 +86,15 @@
     height: 27px;
     border-radius: 20px;
     padding: 10px 20px 0 10px;
-    margin: 0 5% 0 5%;
+    margin: 0 3% 0 3%;
+    color: #236FB0;
     text-align: center;
     transition: .5s;
     /*border: 1px solid;*/
+}
+
+.menu_item :visited {
+    color: #236FB0;
 }
 
 .menu_item :hover {
@@ -131,7 +116,7 @@
 
 /* Donate header button */
 
-.menu_don :link {
+.menu_donate_bt :link {
     display: block;
     width: 102px;
     height: 38px;
@@ -140,7 +125,7 @@
     transition: .5s;
 }
 
-.menu_don :hover {
+.menu_donate_bt :hover {
     width: 125px;
     height: 47px;
     margin: -3px 0 0 15px;
@@ -155,45 +140,27 @@
 
 .main_bg_blue {
     position: relative;
-    /* margin-top: 300px; */
     top: 0px;
-    /* background-image: url(images/header_hp_bg_blue.svg);
-
-    background-repeat: no-repeat;
-    background-position: 50% -100px;
-    background-size: cover; */
-    /* background-attachment: fixed; */
     height: 450px;
     width: 100%;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 
-/* carousel */
+/*
+----------------------------------------------------------------------------------------------------
+     Carousel
+---------------------------------------------------------------------------------------------------- */
 
 #actu_carousel {
     margin-top: 100px;
     /*border: 1px solid;*/
 }
 
-embed {
-    display: block;
-    position: absolute;
-    top: 100px;
-    width: 85%;
-    height: 675px;
-    margin: 0px 8% 0 8%;
-    -webkit-box-shadow: 0px 22px 31px -11px rgba(87, 87, 87, 1);
-    -moz-box-shadow: 0px 22px 31px -11px rgba(87, 87, 87, 1);
-    box-shadow: 0px 22px 31px -11px rgba(87, 87, 87, 1);
-    pointer-events: visible;
-}
-
 .iframe-embed-wrapper2 {
-    /*border: 1px solid rgb(81, 255, 0);*/
-    /* position: inherit; */
     width: 110%;
     margin: -32% auto 0 6%;
+    /* border: 1px solid rgb(81, 255, 0); */
 }
 
 .iframe-embed-wrapper {
@@ -201,8 +168,7 @@ embed {
     display: block;
     height: 0;
     padding: 0;
-    overflow: hidden;
-    /*border: 1px solid rgb(36, 89, 11);*/
+    /* border: 1px solid rgb(36, 89, 11); */
 }
 
 .iframe-embed-responsive-16by9 {
@@ -223,7 +189,7 @@ embed {
 
 /*
 ----------------------------------------------------------------------------------------------------
-     Other elements
+     Other Main elements
 ---------------------------------------------------------------------------------------------------- */
 
 h1 {
@@ -237,9 +203,42 @@ h1 {
      Responsive mode
 ---------------------------------------------------------------------------------------------------- */
 
-@media (max-width: 1130px) {
+@media (max-width: 1150px) {
+    .header_content {
+        padding: 10px 0 10px 0;
+    }
+    .logo {
+        width: 162px;
+        height: 65px;
+        margin-top: 10px;
+        margin-left: 6%;
+    }
+    .menu_item :hover {
+        background-color: white;
+        color: white;
+    }
+    /* Taille Carousel */
+    .iframe-embed-wrapper2 {
+        width: 117.5%;
+        margin: -32% auto 0 3%;
+    }
     /*
     ----------------------------------------------------------------------------------------------------
     MOBILE MENU 
     ---------------------------------------------------------------------------------------------------- */
+    #menu {
+        display: none;
+    }
+    #menu_mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .header_white_wave {
+        margin-top: -5px;
+    }
+    .iframe-embed-wrapper2 {
+        margin: -22% auto 0 3%;
+    }
 }

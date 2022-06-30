@@ -3,12 +3,13 @@
 .open-icon {
     display: block;
     position: absolute;
-    width: 30px;
-    height: 35px;
+    width: 25px;
+    height: 30px;
     background-image: url("images/nav-bt-open.svg");
     background-repeat: no-repeat;
     right: 20px;
-    top: 20px;
+    top: 37px;
+    right: 6.5%;
     z-index: 5;
 }
 
@@ -20,13 +21,12 @@
 /* Sidenav menu */
 
 .sidenav {
+    position: fixed;
     height: 100%;
     width: 100%;
-    position: fixed;
     z-index: 1;
-    /* top: -250px; */
     top: -110%;
-    background-color: #e8e8e8;
+    background-color: white;
     padding-top: 60px;
     transition: 0.5s;
 }
