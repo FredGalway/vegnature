@@ -16,3 +16,8 @@ function closeNav() {
     sidenav.classList.remove("active");
     console.log('menu fermé');
 }
+
+function closeMenuFromItem() {
+    sidenav.classList.remove("active");
+    bt_menu.classList.toggle("active");
+}

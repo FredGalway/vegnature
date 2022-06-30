@@ -1,5 +1,14 @@
 /* Menu icons */
 
+.blue_logo_mobile_menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 52px;
+    height: 73px;
+}
+
 .open-icon {
     display: block;
     position: absolute;
@@ -58,4 +67,8 @@
 
 .sidenav.active {
     top: 0;
+}
+
+.menu_donate_bt :link {
+    margin: 50px auto 0 auto;
 }
