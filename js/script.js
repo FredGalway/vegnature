@@ -1,3 +1,5 @@
+// CAROUSEL script
+
 $(document).ready(function() {
 
     // Responsive tablet rule
@@ -36,6 +38,17 @@ $(document).ready(function() {
 
     $(".carousel .carousel-control-next").on("click", function() {
         $(".carousel").carousel("next");
+    });
+    // Center text part from container size
+    let carousel_box = $(".container");
+    $.fn.center = function() {
+        this.css("position", "absolute");
+        this.css("top", (carousel_box.height() - this.height()) / 1.6 + "px");
+        return this;
+    }
+    $('.carousel-caption').center();
+    $(window).resize(function() {
+        $('.carousel-caption').center();
     });
 
 }); // end of jQuery ready function

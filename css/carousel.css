@@ -16,11 +16,13 @@
 }
 
 .carousel-caption {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    top: 0;
+    padding-top: 0;
+    width: 450px;
+    height: 300px;
     bottom: 0;
+    left: 3%;
+    overflow: hidden;
+    /* border: 1px solid rgb(81, 255, 0); */
 }
 
 .carousel-caption h2,
@@ -122,12 +124,10 @@
 
 .carousel-tag {
     display: block;
-    position: absolute;
-    left: -12%;
-    top: 30%;
     border-radius: 8px;
     height: 40px;
     padding: 0 15px 0 15px;
+    margin-bottom: 30px;
     color: #DEDFDF;
     font-size: 25px;
     font-weight: 100;
@@ -156,9 +156,6 @@
     font-weight: 500;
     font-size: 45px;
     line-height: 55px;
-    position: absolute;
-    left: -12%;
-    top: 45%;
 }
 
 
@@ -175,11 +172,13 @@
 Responsive mode
 ---------------------------------------------------------------------------------------------------- */
 
-@media (max-width: 860px) {
+@media (max-width: 700px) {
+    .carousel-caption {
+        width: 500px;
+        height: 200px;
+    }
     /* Carousel Tag */
     .carousel-tag {
-        left: -12%;
-        top: 22%;
         border-radius: 6px;
         height: 30px;
         padding: 0 15px 0 15px;
@@ -202,11 +201,8 @@ Responsive mode
     /* Carousel Txt */
     .carousel-txt {
         font-weight: 500;
-        font-size: 25px;
-        line-height: 30px;
-        position: absolute;
-        left: -12%;
-        top: 35%;
+        font-size: 30px;
+        line-height: 40px;
     }
     .carousel-control-prev,
     .carousel-control-next,
@@ -225,5 +221,20 @@ Responsive mode
     .to_know_more:link {
         background-size: 10px;
         background-position: 92%;
+    }
+}
+
+@media (max-width: 500px) {
+    .carousel-caption {
+        width: 400px;
+        height: 130px;
+    }
+    .carousel-tag {
+        margin-bottom: 10px;
+    }
+    .carousel-txt {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
     }
 }
