@@ -1,4 +1,5 @@
-/* Menu icons */
+/* MENU TOP ICONS
+-------------------------------------------------- */
 
 .blue_logo_mobile_menu {
     display: block;
@@ -27,7 +28,8 @@
 }
 
 
-/* Sidenav menu */
+/* SIDENAV MENU
+-------------------------------------------------- */
 
 .sidenav {
     position: fixed;
@@ -69,8 +71,42 @@
     top: 0;
 }
 
-.menu_item {
-    text-align: center;
+
+/* MOBILE MENU GROUP / ITEMS
+-------------------------------------------------- */
+
+.mobile_menu_group_center {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    width: 250px;
+    background: white;
+    /* outline: 1px solid black; */
+}
+
+.mobile_menu_group {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: inherit;
+}
+
+.mobile_menu_item {
+    font-size: 31px;
+    line-height: 37px;
+    font-weight: 500;
+    color: #236FB0;
+    text-align: left;
+}
+
+.mobile_menu_item :visited {
+    color: #236FB0;
+}
+
+.bt_menu_donate_center {
+    margin-left: -15px;
 }
 
 .bt_menu_donate_center :link {
