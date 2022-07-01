@@ -5,9 +5,10 @@
     display: block;
     position: absolute;
     top: 20px;
-    left: 40px;
-    width: 52px;
-    height: 73px;
+    left: 30px;
+    width: 42px;
+    height: 60px;
+    z-index: 5;
 }
 
 .open-icon {
@@ -76,12 +77,12 @@
 -------------------------------------------------- */
 
 .mobile_menu_group_center {
-    left: 0;
+    left: -10px;
     right: 0;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    width: 250px;
+    width: 210px;
     background: white;
     /* outline: 1px solid black; */
 }
@@ -94,9 +95,9 @@
 }
 
 .mobile_menu_group>* {
-    font-size: 31px;
+    font-size: 25px;
     line-height: 37px;
-    font-weight: 500;
+    font-weight: 400;
     color: #236FB0;
     text-align: left;
 }
@@ -140,7 +141,7 @@
 
 .mobile_menu_social_network_container {
     width: 100%;
-    height: 315px;
+    height: 240px;
     background-color: #255D92;
 }
 
@@ -155,28 +156,27 @@
 
 .mobile_menu_social_network_group>* {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 8px;
-    margin: 5% 5% 0% 5%;
+    margin: 7% 8% 0% 8%;
     /* outline: 1px solid white; */
     transition: .5s;
 }
 
 .mobile_menu_social_network_group>* img {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-    cursor: grab;
     opacity: 0.5;
     margin: 0 0 0 0;
 }
 
 .mobile_menu_social_network_group>* img:hover {
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     opacity: 1;
     margin: -5px 0 0 -5px;
     transition: .5s;
