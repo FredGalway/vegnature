@@ -12,8 +12,8 @@ $(document).ready(function() {
     // Carousel Header part
 
     $(".carousel").carousel({
-        //interval: false,
         interval: 1000 * 8,
+        // interval: false,
         pause: false,
         touch: true
     });
@@ -46,9 +46,21 @@ $(document).ready(function() {
         this.css("top", (carousel_box.height() - this.height()) / 1.6 + "px");
         return this;
     }
+    $.fn.center_mobile = function() {
+        this.css("position", "absolute");
+        this.css("top", (carousel_box.height() - this.height()) / 2.8 + "px");
+        return this;
+    }
     $('.carousel-caption').center();
     $(window).resize(function() {
         $('.carousel-caption').center();
+        // center text part for mobile device
+        if ($(window).width() <= 400) {
+            //console.log('vs mobile');
+            $('.carousel-caption').center_mobile();
+        } else {
+            //console.log('vs desktop');
+        }
     });
 
 }); // end of jQuery ready function

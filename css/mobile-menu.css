@@ -11,21 +11,55 @@
     z-index: 5;
 }
 
+#mobile_header_nav {
+    position: absolute;
+    right: 12%;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    top: 37px;
+}
+
 .open-icon {
     display: block;
     position: absolute;
+    z-index: 5;
+    top: 37px;
+    right: 5%;
     width: 25px;
     height: 30px;
     background-image: url("images/nav-bt-open.svg");
     background-repeat: no-repeat;
-    right: 20px;
-    top: 37px;
-    right: 6.5%;
-    z-index: 5;
 }
 
 .open-icon.active {
     background-image: url("images/nav-bt-close.svg");
+}
+
+.gap {
+    display: block;
+    width: 20px;
+    height: 25px;
+    border-right: 2px #236FB0 solid;
+    margin: 0 17px 0 0;
+}
+
+.mobile-search-icon {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: -5px;
+}
+
+.mobile_menu_donate_bt :link {
+    display: block;
+    width: 90px;
+    height: 35px;
+    margin: -5px 0 0 15px;
+    background-image: url("images/bt-hp-donate.svg");
+    background-repeat: no-repeat;
+    transition: .5s;
 }
 
 
@@ -94,7 +128,7 @@
     align-items: inherit;
 }
 
-.mobile_menu_group>* {
+.mobile_menu_group>* :link {
     font-size: 25px;
     line-height: 37px;
     font-weight: 400;

@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     transition: .5s;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .carousel-item {
@@ -236,5 +236,24 @@ Responsive mode
         font-weight: 500;
         font-size: 25px;
         line-height: 30px;
+    }
+}
+
+
+/* Mobile version */
+
+@media (max-width: 400px) {
+    /* Important parameters for mobile device */
+    .carousel-item>img {
+        max-width: none;
+        width: 220%;
+        height: auto;
+    }
+    .carousel-tag {
+        margin-bottom: 30px;
+    }
+    .carousel-caption {
+        width: 280px;
+        height: 300px;
     }
 }

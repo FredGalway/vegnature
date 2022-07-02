@@ -22,6 +22,8 @@ main {
 
 main {
     overflow-x: hidden;
+    /* test carousel mobile */
+    overflow-y: hidden;
 }
 
 
@@ -49,6 +51,7 @@ main {
 }
 
 .logo {
+    display: block;
     width: 202px;
     height: 83px;
     float: left;
@@ -69,9 +72,8 @@ main {
     display: block;
     float: right;
     height: 45px;
-    width: auto;
     margin: 10px 6% 0 0;
-    padding-top: 5px;
+    padding-top: 3px;
     pointer-events: auto;
     cursor: default;
     z-index: 10;
@@ -80,27 +82,26 @@ main {
 .menu_group {
     display: flex;
     flex-direction: no-wrap;
+    width: 10%;
+    font-size: 17px;
     font-weight: 400;
-    font-size: 15px;
 }
 
-.menu_item :link {
-    display: block;
+.menu_group>* {
     width: auto;
     height: 27px;
-    border-radius: 20px;
-    padding: 10px 20px 0 10px;
+    padding: 7px 10px 0 10px;
     margin: 0 3% 0 3%;
     color: #236FB0;
     text-align: center;
     transition: .1s;
 }
 
-.menu_item :visited {
+.menu_group>* :visited {
     color: #236FB0;
 }
 
-.menu_item :hover {
+.menu_group>* :hover {
     background-color: white;
     color: #5fd6fe;
 }
@@ -109,11 +110,16 @@ main {
 /* Search header Icon */
 
 .search-icon {
+    display: block;
     width: 22px;
     height: 22px;
     background-image: url("images/search_icon.svg");
     background-repeat: no-repeat;
     margin: 10px 0 0 20px;
+}
+
+.search-icon :hover {
+    display: block;
 }
 
 
@@ -123,7 +129,7 @@ main {
     display: block;
     width: 100px;
     height: 38px;
-    margin: 0 0 0 15px;
+    margin: -8px 0 0 15px;
     background-image: url("images/bt-hp-donate.svg");
     background-repeat: no-repeat;
     transition: .5s;
@@ -132,7 +138,7 @@ main {
 .menu_donate_bt :hover {
     width: 120px;
     height: 43px;
-    margin: -3px -20px 0 15px;
+    margin: -10px -20px 0 15px;
     transition: .5s;
 }
 
@@ -144,10 +150,9 @@ main {
 
 .main_bg_blue {
     position: relative;
-    top: 0px;
-    height: 450px;
+    top: -140px;
     width: 100%;
-    /* border: 1px solid; */
+    transition: .5s;
 }
 
 
@@ -212,10 +217,10 @@ h1 {
         padding: 10px 0 10px 0;
     }
     .logo {
+        display: block;
         width: 162px;
         height: 65px;
-        margin-top: 10px;
-        margin-left: 6%;
+        margin: 10px 6% 0 4%;
     }
     .menu_item :hover {
         background-color: white;
@@ -238,11 +243,41 @@ h1 {
     }
 }
 
+@media (max-width: 1300px) {
+    .main_bg_blue {
+        top: 50px;
+        transition: .5s;
+    }
+}
+
 @media (max-width: 600px) {
+    .main_bg_blue {
+        top: 90px;
+        transition: .5s;
+    }
     .header_white_wave {
-        margin-top: -5px;
+        margin-top: -10px;
     }
     .iframe-embed-wrapper2 {
         margin: -22% auto 0 3%;
+    }
+}
+
+
+/* !Important // for mobile device / Attribute the same height for the 2 embed */
+
+@media (max-width: 400px) {
+    .iframe-embed-wrapper2 {
+        margin: -14% auto 0 3%;
+        /* embed height 1 */
+        height: 468px;
+    }
+    .iframe-embed-responsive-16by9 {
+        padding-bottom: 100%;
+    }
+    .iframe-embed {
+        border: 1px solid rgb(4, 0, 255);
+        /* embed height 2 */
+        height: 468px;
     }
 }
