@@ -22,6 +22,8 @@
 </head>
 
 <body>
+    <!-- Anchor top of page -->
+    <span id="top"></span>
     <!--
   
   ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -127,27 +129,32 @@
             </div>
         </div>
 
-        <!-- 
-        <p>Association Veg Nature</p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed vulputate mi sit amet mauris commodo quis. Dignissim diam quis enim lobortis scelerisque. Cursus metus aliquam eleifend mi.
-            Amet luctus venenatis lectus magna fringilla urna porttitor. Sed sed risus pretium quam vulputate dignissim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Adipiscing diam donec adipiscing tristique risus nec feugiat. Euismod
-            nisi porta lorem mollis aliquam ut porttitor leo a. Turpis massa sed elementum tempus egestas sed sed risus. Quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus urna neque viverra justo nec. Dictum fusce ut placerat orci.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed vulputate mi sit amet mauris commodo quis. Dignissim diam quis enim lobortis scelerisque. Cursus metus aliquam eleifend mi.
-            Amet luctus venenatis lectus magna fringilla urna porttitor. Sed sed risus pretium quam vulputate dignissim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Adipiscing diam donec adipiscing tristique risus nec feugiat. Euismod
-            nisi porta lorem mollis aliquam ut porttitor leo a. Turpis massa sed elementum tempus egestas sed sed risus. Quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus urna neque viverra justo nec. Dictum fusce ut placerat orci.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed vulputate mi sit amet mauris commodo quis. Dignissim diam quis enim lobortis scelerisque. Cursus metus aliquam eleifend mi.
-            Amet luctus venenatis lectus magna fringilla urna porttitor. Sed sed risus pretium quam vulputate dignissim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Adipiscing diam donec adipiscing tristique risus nec feugiat. Euismod
-            nisi porta lorem mollis aliquam ut porttitor leo a. Turpis massa sed elementum tempus egestas sed sed risus. Quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus urna neque viverra justo nec. Dictum fusce ut placerat orci.
-        </p> -->
+        <div class="sample_part">
+            <h1>Association Veg Nature</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed vulputate mi sit amet mauris commodo quis. Dignissim diam quis enim lobortis scelerisque. Cursus metus aliquam eleifend mi.
+                Amet luctus venenatis lectus magna fringilla urna porttitor. Sed sed risus pretium quam vulputate dignissim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Adipiscing diam donec adipiscing tristique risus nec feugiat.
+                Euismod nisi porta lorem mollis aliquam ut porttitor leo a. Turpis massa sed elementum tempus egestas sed sed risus. Quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus urna neque viverra justo nec. Dictum fusce ut placerat
+                orci.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed vulputate mi sit amet mauris commodo quis. Dignissim diam quis enim lobortis scelerisque. Cursus metus aliquam eleifend mi.
+                Amet luctus venenatis lectus magna fringilla urna porttitor. Sed sed risus pretium quam vulputate dignissim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Adipiscing diam donec adipiscing tristique risus nec feugiat.
+                Euismod nisi porta lorem mollis aliquam ut porttitor leo a. Turpis massa sed elementum tempus egestas sed sed risus. Quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus urna neque viverra justo nec. Dictum fusce ut placerat
+                orci.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed vulputate mi sit amet mauris commodo quis. Dignissim diam quis enim lobortis scelerisque. Cursus metus aliquam eleifend mi.
+                Amet luctus venenatis lectus magna fringilla urna porttitor. Sed sed risus pretium quam vulputate dignissim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Adipiscing diam donec adipiscing tristique risus nec feugiat.
+                Euismod nisi porta lorem mollis aliquam ut porttitor leo a. Turpis massa sed elementum tempus egestas sed sed risus. Quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus urna neque viverra justo nec. Dictum fusce ut placerat
+                orci.
+            </p>
+        </div>
 
         <!-- bt PAGE UP -->
-
-        <a id="bt_page_up" class="active" href="#" alt="">Haut de page<span class="bt_page_up_icon"></span></a>
+        <button id="bt_page_up" href="#top" class="active" onclick="window.scrollPageTo('#top', 500)">Haut de page
+            <span class="bt_page_up_icon"></span>
+        </button>
 
 
     </main>
@@ -161,7 +168,7 @@
 
 -->
     <footer>
-        <div class="contenu-footer">
+        <div id="vg_footer" class="contenu-footer">
 
             <div class="bloc footer-logo">
                 <img class="logo-footer" src="css/images/footer_logo.svg" alt="logo footer VEG NATURE.FR" />
@@ -214,9 +221,10 @@
     </footer>
 
     <!-- Loading scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js "></script>
-    <script src="js/script.js "></script>
-    <script src="js/menu.js "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/animatedScrollTo.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
 
 </body>
 
