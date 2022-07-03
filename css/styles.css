@@ -125,8 +125,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.search-icon:hover,
-.search-icon:focus {
+.search-icon:hover {
     background-image: url("images/search_icon_hover.svg");
 }
 
