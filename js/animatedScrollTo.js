@@ -1,21 +1,7 @@
 /**
- * Will gracefuly scroll the page
- * This function will scroll the page using
- * an `ease-in-out` effect.
- *
- * You can use it to scroll to a given element, as well.
- * To do so, pass the element instead of a number as the position.
- * Optionally, you can pass a `queryString` for an element selector.
- *
- * The default duration is half a second (500ms)
- *
- * This function returns a Promise that resolves as soon
- * as it has finished scrolling. If a selector is passed and
- * the element is not present in the page, it will reject.
- *
+ 
  * EXAMPLES:
- *
- * ```js
+ 
  * window.scrollPageTo('#some-section', 2000);
  * window.scrollPageTo(document.getElementById('some-section'), 1000);
  * window.scrollPageTo(500); // will scroll to 500px in 500ms

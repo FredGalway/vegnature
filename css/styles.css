@@ -267,6 +267,11 @@ h1 {
      Footer 
 ---------------------------------------------------------------------------------------------------- */
 
+.footer_blue_wave {
+    width: 100%;
+    height: auto;
+}
+
 footer {
     flex-shrink: 0;
     border-top: 1px solid #000;
