@@ -63,4 +63,19 @@ $(document).ready(function() {
         }
     });
 
+    // PAGE UP A completer ...
+    $(window).on('scroll', function() {
+        if (window.scrollY > window.outerHeight) {
+            $('#scrollToTop').addClass('active')
+        } else {
+            $('#scrollToTop').removeClass('active')
+        }
+    })
+
+    $('#bt_page_up').on('click', function() {
+        $("html, body").animate({ scrollTop: 0 }, 2000);
+        alert("top");
+    })
+
+
 }); // end of jQuery ready function

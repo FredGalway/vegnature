@@ -215,6 +215,250 @@ h1 {
 }
 
 
+/* Bt PAGE UP */
+
+#bt_page_up {
+    display: block;
+    position: fixed;
+    right: 30px;
+    width: auto;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    transition: margin-bottom 0.2s;
+}
+
+#bt_page_up .active {
+    margin-bottom: 0;
+}
+
+.bt_page_up_icon {
+    display: block;
+    position: relative;
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: -5px 0 0 15px;
+    background-image: url("images/bt_page_up.svg");
+    background-repeat: no-repeat;
+}
+
+
+/*----------------------------------------------------------------------------------------------------
+     Footer #236FB0
+---------------------------------------------------------------------------------------------------- */
+
+footer {
+    flex-shrink: 0;
+    border-top: 1px solid #000;
+    width: 100%;
+    background-color: #236FB0;
+    color: white;
+}
+
+.contenu-footer {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 50px;
+}
+
+.footer-logo {
+    display: inline-block;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.logo-footer {
+    width: 50%;
+}
+
+.logo-footer-icon {
+    width: 25px;
+    margin: 0px auto clear: both;
+    margin: 3px;
+    margin-top: 16px;
+}
+
+.zbi a {
+    opacity: 50%;
+}
+
+.zbi a:hover {
+    color: white;
+    opacity: 100%;
+}
+
+.bloc {
+    width: 25%;
+    margin: 0 30px;
+}
+
+
+/*contact*/
+
+.footer-Qui h3,
+.footer-Agir h3,
+.footer-Contact h3 {
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.contenu-footer li {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.liste-Qui,
+.liste-Agir,
+.liste-Contact {
+    list-style-type: none;
+}
+
+.liste-Qui li {
+    padding: 2px 0;
+}
+
+.liste-Qui a {
+    text-decoration: none;
+    color: white;
+    opacity: 50%;
+}
+
+.liste-Qui a:hover {
+    color: white;
+    opacity: 100%;
+}
+
+.liste-Agir li {
+    padding: 2px 0;
+}
+
+.liste-Agir a {
+    text-decoration: none;
+    color: white;
+    opacity: 50%;
+}
+
+.liste-Agir a:hover {
+    color: white;
+    opacity: 100%;
+}
+
+.liste-Contact li {
+    padding: 2px 0;
+}
+
+.liste-Contact a {
+    text-decoration: none;
+    color: white;
+    opacity: 50%;
+}
+
+.liste-Contact a:hover {
+    color: white;
+    opacity: 100%;
+}
+
+
+/* Footer Mentions légales */
+
+.contenu-footer-bottom {
+    width: 100%;
+    height: 50px;
+    background-color: #255D92;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.contenu-footer-bottom ul {
+    display: flex;
+}
+
+.contenu-footer-bottom li {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 15px 0 0 30px;
+}
+
+.contenu-footer-bottom li a {
+    color: white;
+    opacity: 50%;
+}
+
+.contenu-footer-bottom li a:hover {
+    opacity: 100%;
+}
+
+.footer-conception {
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 20px;
+    text-align: right;
+}
+
+
+/*Media queries*/
+
+@media screen and (max-width: 1300px) {
+    .contenu-footer {
+        width: 700px;
+        flex-wrap: wrap;
+    }
+    .bloc {
+        width: 40%;
+        margin: 0 0;
+    }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2) {
+        margin-bottom: 50px;
+    }
+    .footer-logo {
+        display: inline-block;
+        text-align: left;
+    }
+    .zbi {
+        text-align: center;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contenu-footer {
+        width: 320px;
+    }
+    .bloc {
+        width: 300px;
+        margin: 30px 30px;
+    }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2) {
+        margin-bottom: 30px;
+    }
+    .bloc:nth-child(1) {
+        margin-top: 0;
+    }
+    .footer-logo {
+        display: inline-block;
+        text-align: center;
+    }
+    .zbi {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+
 /*
 ----------------------------------------------------------------------------------------------------
      Responsive mode
