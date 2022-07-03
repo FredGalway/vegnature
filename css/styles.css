@@ -219,14 +219,15 @@ h1 {
 
 #bt_page_up {
     display: block;
-    position: fixed;
-    right: 30px;
-    width: auto;
-    height: 30px;
+    /* position: fixed; */
+    /* right: 30px; */
+    float: right;
+    width: 130px;
+    height: auto;
+    margin: 20px 20px 20px 0;
     font-size: 14px;
     font-weight: 300;
-    color: white;
-    transition: margin-bottom 0.2s;
+    color: #236FB0;
 }
 
 #bt_page_up .active {
@@ -246,7 +247,7 @@ h1 {
 
 
 /*----------------------------------------------------------------------------------------------------
-     Footer #236FB0
+     Footer 
 ---------------------------------------------------------------------------------------------------- */
 
 footer {
@@ -264,12 +265,13 @@ footer {
     justify-content: center;
     align-items: flex-start;
     font-size: 20px;
-    padding: 50px 0 50px;
+    padding: 50px 0 50px 0;
 }
 
 .footer-logo {
     display: inline-block;
     text-align: center;
+    /* border: 1px solid; */
 }
 
 .clear {
@@ -278,11 +280,13 @@ footer {
 
 .logo-footer {
     width: 50%;
+    /* border: 1px solid; */
 }
 
 .logo-footer-icon {
     width: 25px;
-    margin: 0px auto clear: both;
+    margin: 0px auto;
+    clear: both;
     margin: 3px;
     margin-top: 16px;
 }
@@ -435,11 +439,15 @@ footer {
 
 @media screen and (max-width: 800px) {
     .contenu-footer {
-        width: 320px;
+        width: auto;
+        padding: 50px 0 0 0;
     }
     .bloc {
-        width: 300px;
-        margin: 30px 30px;
+        width: auto;
+        margin: 30px;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
     .bloc:nth-child(1),
     .bloc:nth-child(2) {
@@ -450,11 +458,35 @@ footer {
     }
     .footer-logo {
         display: inline-block;
+        width: auto;
+        margin: 0 auto 0 auto;
         text-align: center;
     }
     .zbi {
         text-align: center;
-        max-width: 100%;
+        max-width: none;
+    }
+    /* bottom Infos bar */
+    .contenu-footer-bottom {
+        height: auto;
+        padding-top: 30px;
+    }
+    .contenu-footer-bottom ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .contenu-footer-bottom li {
+        display: block;
+        width: auto;
+        height: auto;
+        padding: 15px 0 0 30px;
+        margin: auto;
+        text-align: center;
+    }
+    .footer-conception {
+        position: relative;
+        margin: 0 auto 30px auto;
+        text-align: center;
     }
 }
 
@@ -508,7 +540,7 @@ footer {
         transition: .5s;
     }
     .header_white_wave {
-        margin-top: -10px;
+        margin-top: -12px;
     }
     .iframe-embed-wrapper2 {
         margin: -22% auto 0 3%;
@@ -528,7 +560,7 @@ footer {
         padding-bottom: 100%;
     }
     .iframe-embed {
-        border: 1px solid rgb(4, 0, 255);
+        /* border: 1px solid rgb(4, 0, 255); */
         /* embed height 2 */
         height: 468px;
     }
