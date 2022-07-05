@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Accueil - Association Veg Nature</title>
-    <meta property="og:description" content="Bienvenue sur le site web national de l&rsquo;association Veg Nature co-fondée par 5 Végétaliens en Novembre 2014 pour proposer une approche écologique et holistique du Véganisme (naturelle en somme). N&rsquo;hésitez pas à  contacter l&rsquo;équipe de Veg Nature. Vous souhaitez mieux connaitre l&rsquo;association cliquez sur ce lien Nous sommes organisés en plusieurs groupes locaux indépendants  : Languedoc Roussillon Alsace &hellip; Continuer la lecture de Accueil  &rarr;"
+    <meta property="og:description" content="Bienvenue sur le site web national de l&rsquo;association Veg Nature co-fondée par 5 Végétaliens en Novembre 2014 pour proposer une approche écologique et holistique du Véganisme (naturelle en somme). N&rsquo;hésitez pas à  contacter l&rsquo;équipe de Veg Nature. Vous souhaitez mieux connaitre l&rsquo;association cliquez sur ce lien  sommes organisés en plusieurs groupes locaux indépendants  : Languedoc Roussillon Alsace &hellip; Continuer la lecture de Accueil  &rarr;"
     />
     <meta name="author" content="Vegnature.fr, Frédéric Moitry, Sofian Saint-Denis" />
     <!-- Favicon -->
@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
     <link href="css/mobile-menu.css" rel="stylesheet">
 </head>
 
@@ -41,9 +42,9 @@
             <nav id="menu" aria-label="navigation">
                 <ul class="menu_group">
                     <li><a href="#" alt="Actualités Veg Nature">Actualités</a></li>
-                    <li><a href="#" alt="Découvrir Veg Nature">Nous&nbsp;découvrir</a></li>
+                    <li><a href="#" alt="Découvrir Veg Nature">Découvrir</a></li>
                     <li><a href="#" alt="Projets Veg Nature">Projets</a></li>
-                    <li><a href="#" alt="Aider Veg Nature">Nous&nbsp;aider</a></li>
+                    <li><a href="#" alt="Aider Veg Nature">Aider</a></li>
                     <li><a href="#" alt="Annuaire Veg Nature">Annuaire</a></li>
                     <li><a href="#" alt="Ressources Veg Nature">Ressources</a></li>
 
@@ -82,9 +83,9 @@
                     <div class="mobile_menu_group_center">
                         <ul class="mobile_menu_group">
                             <li><a href="#" alt="Actualités Veg Nature" onclick="closeMenuFromItem();">Actualités</a></li>
-                            <li><a href="#" alt="Découvrir Veg Nature" onclick="closeMenuFromItem();">Nous&nbsp;découvrir</a></li>
+                            <li><a href="#" alt="Découvrir Veg Nature" onclick="closeMenuFromItem();">&nbsp;découvrir</a></li>
                             <li><a href="#" alt="Projets Veg Nature" onclick="closeMenuFromItem();">Projets</a></li>
-                            <li><a href="#" alt="Aider Veg Nature" onclick="closeMenuFromItem();">Nous&nbsp;aider</a></li>
+                            <li><a href="#" alt="Aider Veg Nature" onclick="closeMenuFromItem();">&nbsp;aider</a></li>
                             <li><a href="#" alt="Annuaire Veg Nature" onclick="closeMenuFromItem();">Annuaire</a></li>
                             <li><a href="#" alt="Ressources Veg Nature" onclick="closeMenuFromItem();">Ressources</a></li>
                             <li class="bt_menu_donate_center">
@@ -168,56 +169,81 @@
 
 -->
     <footer>
-        <div id="vg_footer" class="contenu-footer">
 
-            <div class="bloc footer-logo">
-                <img class="logo-footer" src="css/images/footer_logo.svg" alt="logo footer VEG NATURE.FR" />
-
-                <div class="clear"></div>
-                <div class="zbi">
-                    <a href="#"><img class="logo-footer-icon" src="css/images/menu_mobile_facebook_icon.svg" alt="logo facebook footer VEG NATURE.FR" /></a>
-                    <a href="#"><img class="logo-footer-icon" src="css/images/menu_mobile_instagram_icon.svg" alt="logo instagram footer VEG NATURE.FR" /></a>
-                    <a href="#"><img class="logo-footer-icon" src="css/images/menu_mobile_linkedin_icon.svg" alt="logo linkedin footer VEG NATURE.FR" /></a>
-                </div>
-            </div>
-            <div class="bloc footer-Qui">
-                <h3>Qui sommes-nous ?</h3>
-                <ul class="liste-Qui">
-                    <li><a href="#">Nous Découvrir</a></li>
-                    <li><a href="#">Missions</a></li>
-                    <li><a href="#">Notre Expertise</a></li>
-                    <li><a href="#">Actualités</a></li>
-                    <li><a href="#">Transparence Financière</a></li>
-                </ul>
-            </div>
-
-            <div class="bloc footer-Agir">
-                <h3>Agir avec nous</h3>
-                <ul class="liste-Agir">
-                    <li><a href="#">Nous Aider</a></li>
-                    <li><a href="#">Faire Un Don</a></li>
-                    <li><a href="#">Nous Rejoindre</a></li>
-                </ul>
-            </div>
-
-            <div class="bloc footer-Contact">
-                <h3>Nous contacter</h3>
-                <ul class="liste-Contact">
-                    <li><a href="#">Contacter-Nous</a></li>
-                    <li><a href="#">Presse</a></li>
-                </ul>
-            </div>
-
-        </div>
-        <div class="contenu-footer-bottom">
+        <div class="footer_content">
             <ul>
-                <li><a href="#" alt="Veg Nature Assocation à but non lucratif">Veg Nature / Assocation à but non lucratif</a></li>
-                <li><a href="#" alt="Veg Nature Mentions légales">Mentions légales</a></li>
-                <div class="footer-conception">
-                    <li><a href="#" alt="Veg Nature Conception : S.Saint-Denis,  F.Moitry,  L.Bouley">Conception  : S.Saint-Denis,  F.Moitry,  L.Bouley</a></li>
-                </div>
+                <li>
+                    <!-- footer logo -->
+                    <ul>
+                        <li class="footer_logo">
+                            <img src="css/images/footer_logo.svg" alt="logo footer VEG NATURE.FR" />
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="css/images/menu_mobile_facebook_icon.svg" alt="logo facebook footer VEG NATURE.FR" /></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="css/images/menu_mobile_instagram_icon.svg" alt="logo instagram footer VEG NATURE.FR" /></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="css/images/menu_mobile_linkedin_icon.svg" alt="logo linkedin footer VEG NATURE.FR" /></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- footer links 1 -->
+                <li>
+                    <ul>
+                        <li>
+                            <h3>Découvrir Veg Nature</h3>
+                        </li>
+                        <li><a href="#">Infos</a></li>
+                        <li><a href="#">Missions</a></li>
+                        <li><a href="#">Notre Expertise</a></li>
+                        <li><a href="#">Actualités</a></li>
+                        <li><a href="#">Transparence Financière</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- footer links 2 -->
+                    <ul>
+                        <li>
+                            <h3>Agir avec Veg Nature</h3>
+                        </li>
+                        <li><a href="#"> Aider</a></li>
+                        <li><a href="#">Faire Un Don</a></li>
+                        <li><a href="#"> Rejoindre</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- footer links 3 -->
+                    <ul>
+                        <li>
+                            <h3>Contacter Veg Nature</h3>
+                        </li>
+                        <li><a href="#">Coordonnées</a></li>
+                        <li><a href="#">Presse</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
+
+        <div class="footer_status_bar">
+            <ul>
+                <li><a href="#" alt="Veg Nature Assocation à but non lucratif">© Veg Nature 2014 - 2022</a></li>
+                <li><a href="#" alt="Veg Nature Mentions légales">Mentions légales</a></li>
+                <li><a href="#" alt="Veg Nature Status Bar">Cookies</a></li>
+                <li>
+                    <ul>
+                        <li><a href="#">Design et développement :</a></li>
+                        <li><a href="https://www.linkedin.com/in/sofian-saintdenis-ba586a23a/" alt="Sofian Saint-Denis LinkedIn">Sofian Saint-Denis</a></li>
+                        <li><a href="https://www.linkedin.com/in/frederic-moitry" alt="Frédéric Moitry LinkedIn">Frédéric Moitry</a></li>
+                        <li><a href="https://www.linkedin.com/in/bouleylaura/?locale=en_US" alt="Laura Bouley LinkedIn">Laura Bouley</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
     </footer>
 
     <!-- Loading scripts -->
