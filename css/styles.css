@@ -164,15 +164,50 @@ main {
 }
 
 .sample_part {
+    display: block;
     width: auto;
     margin: 0 80px 0 80px;
     text-align: justify;
 }
 
-.sample_part h1 {
+
+/* Main Titles */
+
+.title {
+    margin-bottom: 30px;
+}
+
+.title h1 {
+    display: block;
     font-size: 37px;
     font-weight: 900;
+    text-align: left;
     margin-bottom: 30px;
+}
+
+.title h4 {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: left;
+    margin-top: -25px;
+}
+
+.title_icon.testimony {
+    display: block;
+    width: 70px;
+    height: 60px;
+    float: left;
+    margin-right: 15px;
+    background-image: url("images/title_icon_testimony.svg");
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+
+.title_icon.testimony {
+    background-image: url("images/title_icon_testimony.svg");
+    background-repeat: no-repeat;
 }
 
 .sample_part p {
@@ -224,11 +259,6 @@ main {
 ----------------------------------------------------------------------------------------------------
      Other Main elements
 ---------------------------------------------------------------------------------------------------- */
-
-h1 {
-    font-weight: 700;
-    font-size: 50px;
-}
 
 
 /* Bt PAGE UP */
@@ -318,6 +348,7 @@ h1 {
     width: 145px;
     height: auto;
     margin: -20px 100px 0 0;
+    cursor: pointer;
 }
 
 .footer_content ul ul ul {
