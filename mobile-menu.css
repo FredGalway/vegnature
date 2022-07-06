@@ -1,0 +1,246 @@
+/* MENU TOP ICONS
+-------------------------------------------------- */
+
+.blue_logo_mobile_menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 42px;
+    height: 60px;
+    z-index: 5;
+}
+
+#mobile_header_nav {
+    position: absolute;
+    right: 12%;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    top: 37px;
+}
+
+.open-icon {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 37px;
+    right: 5%;
+    width: 25px;
+    height: 30px;
+    background-image: url("images/nav-bt-open.svg");
+    background-repeat: no-repeat;
+}
+
+.open-icon.active {
+    background-image: url("images/nav-bt-close.svg");
+}
+
+.gap {
+    display: block;
+    width: 20px;
+    height: 25px;
+    border-right: 2px #236FB0 solid;
+    margin: 0 17px 0 0;
+}
+
+.mobile-search-icon {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: -5px;
+}
+
+.mobile_menu_donate_bt :link {
+    display: block;
+    width: 90px;
+    height: 35px;
+    margin: -5px 0 0 15px;
+    background-image: url("images/bt-hp-donate.svg");
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+
+
+/* SIDENAV MENU
+-------------------------------------------------- */
+
+.sidenav {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: -110%;
+    background-color: white;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+
+/* Sidenav menu links */
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav a:link {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: rgb(50, 170, 255);
+}
+
+
+/* Active class */
+
+.sidenav.active {
+    top: 0;
+}
+
+
+/* MOBILE MENU GROUP / ITEMS
+-------------------------------------------------- */
+
+.mobile_menu_group_center {
+    left: -10px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    width: 180px;
+    background: white;
+    /* outline: 1px solid rgb(0, 195, 255); */
+}
+
+.mobile_menu_group {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: inherit;
+}
+
+.mobile_menu_group>* :link {
+    font-size: 25px;
+    line-height: 37px;
+    font-weight: 400;
+    color: #236FB0;
+    text-align: left;
+}
+
+.mobile_menu_group>* :visited {
+    color: #236FB0;
+}
+
+.bt_menu_donate_center {
+    margin-left: 15px;
+}
+
+.bt_menu_donate_center :link {
+    display: block;
+    position: relative;
+    background-image: url("images/bt-hp-donate.svg");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 38px;
+    margin: 30px auto 0 auto;
+}
+
+.bt_menu_donate_center :hover {
+    background-image: url("images/bt-hp-donate.svg");
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 43px;
+    margin: 30px auto 0 auto;
+}
+
+
+/* MOBILE MENU / Social Network part
+-------------------------------------------------- */
+
+.mobile_menu_global_social_network_container {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.mobile_menu_social_network_container {
+    width: 100%;
+    /* height: 240px; */
+    background-color: #255D92;
+    transition: .5s;
+}
+
+.mobile_menu_social_network_group {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: inherit;
+}
+
+.mobile_menu_social_network_group>* {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin: 7% 8% 0% 8%;
+    /* outline: 1px solid white; */
+    transition: .5s;
+}
+
+.mobile_menu_social_network_group>* img {
+    display: block;
+    /* width: 40px;
+    height: 40px; */
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 0 0 0 0;
+}
+
+.mobile_menu_social_network_group>* img:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    margin: -5px 0 0 -5px;
+    transition: .5s;
+}
+
+@media screen and (max-width: 1200px) {
+    .mobile_menu_social_network_container {
+        height: 340px;
+    }
+    .mobile_menu_social_network_group>* img {
+        width: 50px;
+        height: 50px;
+    }
+    .mobile_menu_social_network_group>* img:hover {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mobile_menu_social_network_container {
+        height: 240px;
+    }
+    .mobile_menu_social_network_group>* img {
+        width: 40px;
+        height: 40px;
+    }
+    .mobile_menu_social_network_group>* img:hover {
+        width: 50px;
+        height: 50px;
+    }
+}
